@@ -1,0 +1,55 @@
+<html>
+    <head><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+       <link rel="stylesheet" href="index.css">
+       <!-- font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Smythe&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div id="page-wrapper" class="page-wrapper">
+            <header>
+                <div class="header-inner">
+                    <h1>Jimmy's Diner</h1>
+                    <h2 class="subtitle">The Best Burguers and Pizzas in Town.</h2>
+                </div> 
+            </header>
+            <main>
+                <div id="ordering-section" class="ordering-section">
+                </div>
+                
+                <div class="pre-checkout-wrapper">
+                    <div id="pre-checkout" class="pre-checkout hidden">
+                        <h2 class="your-order">Your order</h2>
+                        <div id="confirm-items" class="confirm-items"> 
+                            <!-- INSERT THE BOUGHT ITEMS HERE USING JAVASCRIPT -->
+                        </div>
+                        <div class="total-price-section">
+                            <h2>Total price:</h2>
+                            <p id="total-price" class="total-price confirm-price"></p><!-- CALCULATE TOTAL PRICE USING JS -->
+                        </div>
+                        <button id="complete-order-btn" class="green-btn">Complete order</button>
+                    </div>
+                    
+                    <div id="final-message-section" class="final-message-section hidden">
+                        <h2 class="final-message">Thanks, James! Your order is on its way!</h2>
+                    </div>
+                    
+                </div>
+                
+                <div id="modal" class="modal hidden">
+                    <h3 class="details">Enter card details</h3>
+                    <form id="payment-form">
+                        <input type="text" placeholder="Enter your name" required/>
+                        <input type="text" placeholder="Enter card number" required/>
+                        <input type="text" placeholder="Enter CVV" required/>
+                        <button id="pay-btn" class="green-btn pay-btn" type="submit">Pay</button>
+                    </form>
+                </div>
+            </main>
+        </div>
+        
+	<script src="index.js" type="module"></script>
+    </body>
+</html>
+

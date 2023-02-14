@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Smythe', cursive;
+} 
+
+header {
+    width: 600px;
+    margin: 0 auto;
+    color: whitesmoke;
+}
+
+.header-inner {
+    height: 170px;
+    background-image: url('./images/hamburger.png');
+    background-size: cover;
+    padding: 30px 0px 0px 45px;
+}
+
+h1 {
+    font-size: 40px;
+    margin: 0;
+    font-weight: 400;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.details {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+}
+
+.subtitle {
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+main {
+    position: relative;
+    max-width: 500px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.food-name {
+    font-size: 28px;
+    margin: 0;
+    font-weight: 400;
+}
+
+.ingredients {
+    font-size: 16px;
+    color: #8B8B8B;
+    margin: 8px 0px;
+
+}
+
+.price {
+    font-size: 20px;
+    margin: 0;
+}
+
+.ordering-section {
+    margin: 0 auto;
+}
+
+.food-item {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 3px solid #D2D2D2;
+}
+
+.food-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.food-emoji {
+    font-size: 70px;
+    width: 100px;
+}
+
+.add-btn {
+    border-radius: 50%;
+    border: 1.5px solid #DEDEDE;
+    color: #3C3C3C;
+    width: 50px;
+    height: 50px;
+    border-width: 1.5px;
+    background: white;
+    font-size: 25px;
+    font-weight: 100;
+}
+
+.pre-checkout-wrapper {
+    min-height: 300px;
+}
+
+.your-order {
+    text-align: center;
+}
+
+.pre-checkout {
+    padding-top: 25px;
+}
+
+.confirm-items-inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm-item-name {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.remove-item-btn {
+    color: #BBBBBB;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+
+.confirm-price {
+    font-size: 20px;
+}
+
+.total-price-section {
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #393333;
+}
+
+.green-btn {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+    width: 100%;
+    padding: 20px 15px;
+    background: #16DB99;
+    border: none;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.pay-btn {
+    font-size: 20px;
+}
+
+/* modal */
+
+.modal {
+    text-align: center;
+    margin: 0 auto;
+    max-width: 430px;
+    max-height: 430px;
+    border: none;
+    background: #FFFFFF;
+    padding: 20px;
+    box-shadow: 0px 0px 65px 20px #666;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 320px;
+    bottom: 0;
+}
+
+input{
+    margin-top: 10px; 
+    border: 1px solid #212529;
+    padding: 20px;
+    width: 100%;
+    border-radius: 3px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.final-message-section {
+    background: #ECFDF5;
+    width: 500px;
+    height: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #065F46;
+    font-size: 32px;
+    margin-top: 45px;
+}
+
+/* Utility */
+.hidden {
+    display: none;
+}
+
+.dark-bg {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
